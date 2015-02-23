@@ -40,9 +40,5 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 
-  ENV["RAILS_ENV"] ||= 'test'
-  require File.expand_path("../../config/environment", __FILE__)
-  require 'rspec/rails'
-
   config.include Capybara::DSL
 end
